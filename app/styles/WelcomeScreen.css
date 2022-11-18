@@ -1,0 +1,9 @@
+.logo{
+    height: 97;
+    width: 300;
+}
+.logoContainer{
+    position: relative;
+    top: 40%;
+    align-items: center;
+}
