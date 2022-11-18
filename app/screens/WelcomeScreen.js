@@ -1,21 +1,26 @@
 import React from "react";
-import { ImageBackground, StyleSheet } from "react-native";
+import { ImageBackground, StyleSheet, View } from "react-native";
 
 function WelcomeScreen(props) {
   return (
-    <ImageBackground
-      style={styles.background}
-      source={require("../assets/mineolaUFSD.png")}
-    ></ImageBackground>
+    <View style={styles.logoContainer}>
+      <ImageBackground
+        style={styles.logo}
+        source={require("../assets/mineolaUFSD.png")}
+      ></ImageBackground>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-        alignItems: "center",
-        height: 97,
-        width: 300
-    }
-})
+  logo: {
+    height: 97,
+    width: 300,
+  },
+  logoContainer: {
+    position: "relative",
+    top: "40%",
+    alignItems: "center",
+  },
+});
 export default WelcomeScreen;
