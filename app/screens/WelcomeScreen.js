@@ -1,28 +1,16 @@
 import React from "react";
-import { ImageBackground, StyleSheet, View } from "react-native";
-
-import style from '../styles/WelcomeScreen.css';
+import { ImageBackground, StyleSheet, View, SafeAreaView } from "react-native";
+import style from "../styles/WelcomeScreen.css";
 
 function WelcomeScreen(props) {
 	return (
-		<View style={style.logoContainer}>
+		<SafeAreaView style={AndroidSafeScreen}>
 			<ImageBackground
 				style={style.logo}
 				source={require("../assets/mineolaUFSD.png")}
 			></ImageBackground>
-		</View>
+		</SafeAreaView>
 	);
 }
 
-const styles = StyleSheet.create({
-	logo: {
-		height: 97,
-		width: 300,
-	},
-	logoContainer: {
-		position: "relative",
-		top: "40%",
-		alignItems: "center",
-	},
-});
 export default WelcomeScreen;

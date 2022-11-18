@@ -1,13 +1,48 @@
-.logo{
-    width: 300px;
-    height: 97px;
+.logo {
+	width: 300px;
+	height: 97px;
 }
-.logoContainer{
-    position: relative;
-    top: 20%;
-    align-items: center;
+.container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.text{
-    position: relative;
-    top: 40%;
+.text {
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: 45px;
+	font-family: Itim;
+}
+.textInput1, .textInput2 {
+	width: 80%;
+	height: 46px;
+	border: none;
+	margin-top: 18px;
+}
+.textInput1 {
+    margin-top: 37px;
+}
+.buttonContainer {
+	width: 80%;
+	height: auto;
+	margin-top: 58px;
+}
+.button1, .button2, .button3 {
+	width: 100%;
+	height: auto;
+    border-color: black;
+	border-radius: 25px;
+	background-color: #d31245;
+	margin-bottom: 18px;
+}
+.button3 {
+    margin-bottom: 0px;
+}
+.buttonText{
+    color: black;
+    font-family: Itim;
+    font-size: 20px;
 }
