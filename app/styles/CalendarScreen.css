@@ -1,0 +1,43 @@
+
+
+.logo {
+	width: 300px;
+	height: 97px;
+}
+.titleText{
+    font-size: 40px;
+	font-family: Itim;
+    width: 88%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.calendarContainer{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.calendarButtonContainer{
+    width: 90%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.calendarButton{
+    width: 50%;
+    height: 100%;
+    background-color: #d31245;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendarButtonText{
+    color: black;
+    font-size: 20px;
+    font-family: Itim;
+}

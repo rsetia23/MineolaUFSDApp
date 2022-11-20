@@ -6,22 +6,28 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "postinstall": "node_modules/.bin/rn-nodeify --install fs --hack"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.1",
     "babel-plugin-react-native-classname-to-style": "^1.2.2",
     "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "cal-parser": "^1.0.2",
     "expo": "~47.0.6",
     "expo-font": "^11.0.1",
     "expo-modules-core": "~1.0.3",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
+    "fs": "^0.0.1-security",
     "react": "18.1.0",
+    "react-google-calendar-api": "^2.1.0",
     "react-native": "0.70.5",
     "react-native-css-transformer": "^1.2.4",
-    "react-native-paper": "^4.12.5"
+    "react-native-paper": "^4.12.5",
+    "react-native-vector-icons": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

@@ -1,0 +1,56 @@
+/* @font-face {
+  font-family: Javanese;
+  src: url(Javanese-Text.ttf);
+} */
+
+.logo {
+	width: 300px;
+	height: 97px;
+}
+.newsContainer {
+	height: 100%;
+	/* background-color: blue; */
+	width: 100%;
+	position: relative;
+	align-items: center;
+}
+
+.titleText {
+	font-size: 40px;
+	font-family: Itim;
+    width: 88%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.newsContentContainer {
+	overflow-y: scroll;
+	width: 100%;
+	/* background-color: red; */
+}
+.newsContentBlock {
+	width: 100%;
+	margin-bottom: 20px;
+	/* background-color: grey; */
+	display: flex;
+	align-items: center;
+}
+.newsContentHeading {
+	font-size: 22px;
+	width: 85%;
+	font-family: Javanese;
+	text-decoration: underline;
+}
+.newsContentImage {
+	width: 80%;
+	/* margin-left: 30px; */
+}
+.newsContentBlurb {
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 15px;
+	/* margin-left: 25px; */
+	font-family: Inter;
+	color: #6c6a6a;
+	width: 80%;
+}
