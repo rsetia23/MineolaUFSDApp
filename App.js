@@ -10,18 +10,9 @@ import CalendarScreen from "./app/screens/CalendarScreen.js";
 import ProfileScreen from "./app/screens/ProfileScreen.js";
 
 export default function App() {
-	const Stack = createNativeStackNavigator();
 
 	return (
-		<>
-			<NavigationContainer>
-				<Stack.Navigator>
-					<Stack.Screen name="Home" component={HomeScreen} />
-					<Stack.Screen name="News" component={NewsScreen} />
-					<Stack.Screen name="Calendar" component={CalendarScreen} />
-					<Stack.Screen name="Profile" component={ProfileScreen} />
-				</Stack.Navigator>
-			</NavigationContainer>
-		</>
+		<HomeScreen />
+		// <NewsScreen />
 	);
 }

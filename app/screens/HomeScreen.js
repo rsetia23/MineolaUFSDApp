@@ -8,23 +8,21 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
 function HomeScreen(props, {navigation}) {
-	// const [fontsLoaded] = useFonts({
-	//   Itim: require("../fonts/Itim-Regular.ttf"),
-	//   Javanese: require("../fonts/Javanese-Text.ttf"),
-	//   Inter: require("../fonts/Inter-Regular.ttf"),
-	// });
+	const [fontsLoaded] = useFonts({
+	  Itim: require("../fonts/Itim-Regular.ttf"),
+	  Javanese: require("../fonts/Javanese-Text.ttf"),
+	  Inter: require("../fonts/Inter-Regular.ttf"),
+	});
 
-	// const onLayoutRootView = useCallback(async () => {
-	//   if (fontsLoaded) {
-	//     await SplashScreen.hideAsync();
-	//   }
-	// }, [fontsLoaded]);
+	const onLayoutRootView = useCallback(async () => {
+	  if (fontsLoaded) {
+	    await SplashScreen.hideAsync();
+	  }
+	}, [fontsLoaded]);
 
-	// if (!fontsLoaded) {
-	//   return null;
-	// }
-
-  // const Stack = createNativeStackNavigator();
+	if (!fontsLoaded) {
+	  return null;
+	}
 
 	return (
       <SafeAreaView style={{ paddingTap: StatusBar.currentHeight, flex: 1 }}>
@@ -48,7 +46,7 @@ function HomeScreen(props, {navigation}) {
               </Text>
             </View>
 
-            <View style={style.homeBlock}>
+            <View style={style.newsBlock}>
               <Text style={style.newsHeading}>
                 Apple Distinguished Schools
               </Text>
@@ -64,7 +62,6 @@ function HomeScreen(props, {navigation}) {
           </ScrollView>
           
         </View>
-        <Button title="Button" onPress={() => {navigation.navigate('News')}} />
       </SafeAreaView>
 	);
 }
