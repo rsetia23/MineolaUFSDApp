@@ -19,7 +19,7 @@
   font-size: 20px;
   line-height: 24px;
   margin-top: 45px;
-  font-family: 'Itim';
+  font-family: Itim;
 }
 .textInput1,
 .textInput2 {
@@ -52,6 +52,6 @@
 
 .buttonText {
   color: black;
-  font-family: 'Itim';
+  font-family: Itim;
   font-size: 20px;
 }

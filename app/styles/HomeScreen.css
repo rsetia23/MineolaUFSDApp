@@ -4,42 +4,47 @@
 } */
 
 .logo {
-  width: 300px;
-  height: 97px;
+	width: 300px;
+	height: 97px;
 }
-.container {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homeContainer {
+	height: 100%;
+  background-color: blue;
+	width: 100%;
+	position: relative;
+	align-items: center;
 }
 
 .titleText {
-  font-size: 40px;
-  /* line-height: 24px; */
-  margin-top: 10px;
-  margin-right: 225px;
-  font-family: Itim;
+	font-size: 40px;
+	/* line-height: 24px; */
+	margin-top: 10px;
+	margin-right: 225px;
+	font-family: Itim;
 }
 
-.subheading {
-  font-size: 24px;
-  font-family: Javanese;
-  text-decoration: underline;
-  margin-right: 125px;
+.newsContainer{
+  overflow-y: scroll;
+  background-color: red;
 }
-
+.newsBlock{
+  width: 80%;
+  background-color: grey;
+}
+.newsHeading {
+	font-size: 24px;
+	font-family: Javanese;
+	text-decoration: underline;
+	margin-right: 125px;
+}
 .newsImage {
-  margin-left: 30px;
+	margin-left: 30px;
 }
-
 .newsBlurb {
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 15px;
-  margin-left: 25px;
-  font-family: Inter;
-  color: #6C6A6A;
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 15px;
+	margin-left: 25px;
+	font-family: Inter;
+	color: #6c6a6a;
 }

@@ -16,6 +16,8 @@ import * as SplashScreen from "expo-splash-screen";
 function LoginScreen(props) {
   const [fontsLoaded] = useFonts({
     Itim: require("../fonts/Itim-Regular.ttf"),
+    Javanese: require("../fonts/Javanese-Text.ttf"),
+    Inter: require("../fonts/Inter-Regular.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
